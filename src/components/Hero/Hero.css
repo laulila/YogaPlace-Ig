@@ -1,0 +1,39 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image:
+  linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.35)
+  ),
+  url("../../assets/images/yoga.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+}
+
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+
+.hero p {
+  font-size: 1.3rem;
+}
+
+
+.hero-btn {
+  display: inline-block;
+  background: rgb(46,224,37);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+}
