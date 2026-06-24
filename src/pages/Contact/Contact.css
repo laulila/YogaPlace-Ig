@@ -117,7 +117,7 @@
 
   min-height: 120px;
 
-  resize: none;
+  resize: vertical;
 
 }
 
@@ -152,5 +152,16 @@
   background: var(--accent-dark);
 
   transform: translateY(-3px);
+
+}
+@media (max-width: 600px) {
+
+  .contact-card {
+    padding: 25px;
+  }
+
+  .contact-card h2 {
+    font-size: 1.6rem;
+  }
 
 }

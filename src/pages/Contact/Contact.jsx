@@ -1,4 +1,6 @@
+       
 import { useState } from "react";
+import "./Contact.css";
 
 export default function Contact() {
 
@@ -8,6 +10,7 @@ export default function Contact() {
     mensaje: ""
   });
 
+
   const handleChange = (e) => {
     setForm({
       ...form,
@@ -15,17 +18,25 @@ export default function Contact() {
     });
   };
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const url = `https://wa.me/5491157067354?text=
-🧘 Reserva de clase Yoga%0A%0A
-Nombre: ${form.nombre}%0A
-Email: ${form.email}%0A
-Mensaje: ${form.mensaje}`;
+    const mensaje = `
+🧘 Reserva de clase Yoga
+
+Nombre: ${form.nombre}
+
+Email: ${form.email}
+
+Mensaje: ${form.mensaje}
+`;
+
+    const url = `https://wa.me/5491157067354?text=${encodeURIComponent(mensaje)}`;
 
     window.open(url, "_blank");
   };
+
 
   return (
     <section className="contact">
@@ -38,6 +49,7 @@ Mensaje: ${form.mensaje}`;
           Elegí un momento para conectar con tu práctica.
         </p>
 
+
         <form onSubmit={handleSubmit}>
 
           <input
@@ -49,6 +61,7 @@ Mensaje: ${form.mensaje}`;
             required
           />
 
+
           <input
             type="email"
             name="email"
@@ -58,6 +71,7 @@ Mensaje: ${form.mensaje}`;
             required
           />
 
+
           <textarea
             name="mensaje"
             placeholder="¿Qué te gustaría trabajar?"
@@ -65,6 +79,7 @@ Mensaje: ${form.mensaje}`;
             onChange={handleChange}
             required
           />
+
 
           <button type="submit">
             Continuar a WhatsApp
