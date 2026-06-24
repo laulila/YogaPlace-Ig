@@ -1,39 +1,65 @@
 .hero {
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 
   background-image:
-  linear-gradient(
-    rgba(43, 125, 28, 0.35),
-    rgba(160, 245, 215, 0.35)
-  ),
-  url("../../assets/images/yoga.jpg");
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url("../../assets/images/yoga.jpg");
 
   background-size: cover;
   background-position: center;
 
-  color: rgb(239, 231, 231);
+  color: white;
+  padding: 20px;
+}
+
+
+.hero-overlay {
+  max-width: 700px;
 }
 
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 
 .hero p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
 }
 
 
 .hero-btn {
+
   display: inline-block;
-  background: rgb(46,224,37);
-  color: white;
-  padding: 12px 25px;
-  border-radius: 30px;
+
+  background: white;
+  color: #2b7d1c;
+
+  padding: 15px 35px;
+
+  border-radius: 50px;
+
+  font-weight: 600;
+
   text-decoration: none;
+
+  transition: 0.3s;
+}
+
+
+.hero-btn:hover {
+
+  transform: translateY(-3px);
+
 }
