@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 import WhatsAppButton from "../../components/WhatsAppButton";
 
 import "./Home.css";
-import "../../App.css";
+
 function Home() {
   return (
     <div className="home">

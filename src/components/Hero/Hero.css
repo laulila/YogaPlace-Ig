@@ -7,15 +7,15 @@
 
   background-image:
   linear-gradient(
-    rgba(0,0,0,.35),
-    rgba(0,0,0,.35)
+    rgba(43, 125, 28, 0.35),
+    rgba(160, 245, 215, 0.35)
   ),
   url("../../assets/images/yoga.jpg");
 
   background-size: cover;
   background-position: center;
 
-  color: white;
+  color: rgb(239, 231, 231);
 }
 
 
