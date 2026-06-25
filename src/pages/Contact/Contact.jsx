@@ -1,4 +1,4 @@
-       
+import { Link } from "react-router-dom";     
 import { useState } from "react";
 import "./Contact.css";
 
@@ -84,6 +84,9 @@ Mensaje: ${form.mensaje}
           <button type="submit">
             Continuar a WhatsApp
           </button>
+          <Link to="/" className="back-home">
+  ← Volver al inicio
+</Link>
 
         </form>
 

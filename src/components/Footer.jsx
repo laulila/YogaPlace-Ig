@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
@@ -16,13 +17,14 @@ export default function Footer() {
 
         <div className="footer-links">
 
-          <a href="/">
+          <Link to="/">
             Inicio
-          </a>
+          </Link>
 
-          <a href="/contact">
+
+          <Link to="/contact">
             Contacto
-          </a>
+          </Link>
 
 
           <a
