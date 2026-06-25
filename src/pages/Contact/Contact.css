@@ -1,167 +1,341 @@
+
 /* =========================
-   📅 BOOKING PRO CLEAN
+   📅 CONTACT / BOOKING
 ========================= */
+
 
 .contact {
 
-  min-height: 80vh;
+  min-height:80vh;
 
-  display: flex;
+  display:flex;
 
-  justify-content: center;
+  justify-content:center;
 
-  align-items: center;
+  align-items:center;
 
-  padding: 80px 20px;
+  padding:80px 20px;
 
-  background: var(--accent-bg);
+  background:var(--accent-bg);
 
 }
+
+
 
 
 .contact-card {
 
-  width: 100%;
 
-  max-width: 520px;
+  width:100%;
 
-  background: var(--bg);
 
-  padding: 40px;
+  max-width:520px;
 
-  border-radius: 25px;
 
-  box-shadow: var(--shadow);
+  background:var(--bg);
 
-  border: 1px solid var(--border);
 
-  text-align: center;
+  padding:40px;
+
+
+  border-radius:25px;
+
+
+  box-shadow:var(--shadow);
+
+
+  border:1px solid var(--border);
+
+
+  text-align:center;
 
 }
+
+
+
 
 
 .contact-card h2 {
 
-  font-size: 2rem;
 
-  margin-bottom: 10px;
+  font-size:2rem;
+
+
+  margin-bottom:10px;
+
+
+  color:var(--text-h);
 
 }
+
+
 
 
 .contact-card p {
 
-  margin-bottom: 25px;
 
-  color: var(--text);
+  margin-bottom:25px;
+
+
+  color:var(--text);
 
 }
 
 
-/* FORM LAYOUT PERFECTO */
+
+
+
+/* =========================
+   FORM
+========================= */
+
 
 .contact-card form {
 
-  display: flex;
 
-  flex-direction: column;
+  display:flex;
 
-  gap: 14px;
 
-  text-align: left;
+  flex-direction:column;
+
+
+  gap:14px;
+
+
+  text-align:left;
 
 }
+
+
+
 
 
 /* INPUTS */
 
+
 .contact-card input,
 .contact-card textarea {
 
-  width: 100%;
 
-  padding: 14px;
+  width:100%;
 
-  border-radius: 12px;
 
-  border: 1px solid var(--border);
+  padding:14px;
 
-  font-family: var(--font);
 
-  background: var(--bg);
+  border-radius:12px;
 
-  color: var(--text);
 
-  font-size: 1rem;
+  border:1px solid var(--border);
+
+
+  font-family:var(--font);
+
+
+  background:var(--bg);
+
+
+  color:var(--text);
+
+
+  font-size:1rem;
+
+
+  transition:.3s;
 
 }
 
 
-/* FOCUS PRO */
+
+
+
+.contact-card input::placeholder,
+.contact-card textarea::placeholder {
+
+
+  color:var(--text);
+
+
+  opacity:.6;
+
+}
+
+
+
+
+
+/* INPUT ACTIVO */
+
 
 .contact-card input:focus,
 .contact-card textarea:focus {
 
-  outline: none;
 
-  border-color: var(--accent);
+  outline:none;
 
-  box-shadow: 0 0 0 3px var(--accent-bg);
+
+  border-color:var(--accent);
+
+
+  box-shadow:
+  0 0 0 3px var(--accent-bg);
 
 }
+
+
 
 
 /* TEXTAREA */
 
+
 .contact-card textarea {
 
-  min-height: 120px;
 
-  resize: vertical;
+  min-height:120px;
+
+
+  resize:vertical;
 
 }
 
 
-/* BUTTON */
+
+
+
+/* BOTON */
+
 
 .contact-card button {
 
-  padding: 14px;
 
-  border: none;
+  padding:14px;
 
-  border-radius: 30px;
 
-  background: var(--accent);
+  border:none;
 
-  color: white;
 
-  font-weight: 600;
+  border-radius:30px;
 
-  cursor: pointer;
 
-  transition: 0.3s;
+  background:var(--accent);
 
-  margin-top: 5px;
+
+  color:white;
+
+
+  font-weight:600;
+
+
+  cursor:pointer;
+
+
+  transition:.3s;
+
+
+  margin-top:5px;
 
 }
+
 
 
 .contact-card button:hover {
 
-  background: var(--accent-dark);
 
-  transform: translateY(-3px);
+  background:var(--accent-dark);
+
+
+  transform:translateY(-3px);
 
 }
-@media (max-width: 600px) {
+
+
+
+
+/* =========================
+   🔙 VOLVER A INICIO
+========================= */
+
+
+.back-home {
+
+
+  display:inline-block;
+
+
+  margin-top:25px;
+
+
+  color:var(--accent);
+
+
+  font-weight:700;
+
+
+  font-size:1rem;
+
+
+  transition:.3s;
+
+}
+
+
+
+.back-home:hover {
+
+
+  color:var(--accent-dark);
+
+
+  transform:translateY(-2px);
+
+}
+
+
+
+
+
+/* DARK MODE */
+
+
+.dark .back-home {
+
+
+  color:var(--accent);
+
+}
+
+
+
+.dark .back-home:hover {
+
+
+  color:var(--accent-dark);
+
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:600px){
+
 
   .contact-card {
-    padding: 25px;
+
+
+    padding:25px;
+
   }
 
+
   .contact-card h2 {
-    font-size: 1.6rem;
+
+
+    font-size:1.6rem;
+
   }
 
 }

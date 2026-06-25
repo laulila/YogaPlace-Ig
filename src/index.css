@@ -3,40 +3,60 @@
 ========================= */
 
 :root {
-  --bg: #ffffff;
-  --text: #5f5a55;
+
+  --bg: #f6fbf4;
+
+  --text: #465044;
+
   --text-h: #2d2926;
 
   --border: #e8ded4;
 
-  --accent: #6b8f71;
-  --accent-dark: #4f7055;
+  --accent: #2f7d32;
 
-  --accent-bg: rgba(107, 143, 113, 0.12);
+  --accent-dark: #1f5d25;
 
-  --shadow: rgba(0, 0, 0, 0.08) 0 10px 25px;
+  --accent-bg: rgba(47,125,50,.12);
 
-  --font: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --shadow:
+    rgba(0,0,0,.08) 0 10px 25px;
+
+  --font:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+
 }
+
 
 /* =========================
    🌙 DARK MODE
 ========================= */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #151815;
-    --text: #c8c6c2;
-    --text-h: #ffffff;
+.dark {
 
-    --border: #303630;
+  --bg:#151815;
 
-    --accent: #9ac29f;
-    --accent-dark: #7fb386;
+  --text:#e2e6df;
 
-    --accent-bg: rgba(154, 194, 159, 0.15);
-  }
+  --text-h:#ffffff;
+
+  --border:#303630;
+
+  --accent:#9ac29f;
+
+  --accent-dark:#7fb386;
+
+  --accent-bg:rgba(154,194,159,.15);
+
+  --shadow:
+    rgba(0,0,0,.35) 0 10px 25px;
+
 }
+
+
 
 /* =========================
    🌐 BASE
@@ -44,19 +64,32 @@
 
 html,
 body {
-  height: 100%;
+
+  height:100%;
+
 }
+
 
 body {
-  margin: 0;
-  font-family: var(--font);
-  background: var(--bg);
-  color: var(--text);
+
+  margin:0;
+
+  font-family:var(--font);
+
+  background:var(--bg);
+
+  color:var(--text);
+
 }
 
+
 #root {
-  min-height: 100vh;
+
+  min-height:100vh;
+
 }
+
+
 
 /* =========================
    🧱 TIPOGRAFÍA
@@ -65,207 +98,330 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--text-h);
-  margin: 0;
+
+  color:var(--text-h);
+
+  margin:0;
+
 }
 
+
 p {
-  line-height: 1.6;
+
+  color:var(--text);
+
+  line-height:1.6;
+
 }
+
+
 
 /* =========================
    🔗 LINKS
 ========================= */
 
 a {
-  color: inherit;
-  text-decoration: none;
+
+  color:inherit;
+
+  text-decoration:none;
+
 }
+
+
 
 /* =========================
    📦 SECCIONES
 ========================= */
 
 section {
-  padding: 80px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+
+  padding:80px 20px;
+
+  max-width:1200px;
+
+  margin:0 auto;
+
 }
+
+
 
 /* =========================
    🧩 CARDS
 ========================= */
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:25px;
+
 }
+
 
 .cards article {
-  padding: 30px;
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  background: var(--bg);
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+
+  padding:30px;
+
+  border:1px solid var(--border);
+
+  border-radius:20px;
+
+  background:var(--bg);
+
+  box-shadow:var(--shadow);
+
 }
 
-.cards article:hover {
-  transform: translateY(-6px);
-}
+
 
 /* =========================
-   💬 WHATSAPP BUTTON
+   🌿 BENEFITS
 ========================= */
 
-.whatsapp {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
+.benefits {
 
-  width: 55px;
-  height: 55px;
+  text-align:center;
 
-  border-radius: 50%;
-  background: #25d366;
-  color: white;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow: var(--shadow);
-
-  font-size: 24px;
-
-  z-index: 1000;
-
-  transition: transform 0.3s ease;
 }
 
-.whatsapp:hover {
-  transform: scale(1.1);
+
+.benefit-card {
+
+  background:var(--bg);
+
+  border:1px solid var(--border);
+
+  border-radius:20px;
+
+  padding:30px;
+
+  box-shadow:var(--shadow);
+
 }
+
+
+.icon {
+
+  font-size:40px;
+
+  color:var(--accent);
+
+}
+
+
 
 /* =========================
    👤 ABOUT
 ========================= */
 
 .about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 50px;
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  align-items:center;
+
+  gap:50px;
+
 }
+
 
 .about img {
-  width: 100%;
-  max-width: 420px;
-  border-radius: 30px;
-  box-shadow: var(--shadow);
-  object-fit: cover;
+
+  width:100%;
+
+  max-width:420px;
+
+  border-radius:30px;
+
+  box-shadow:var(--shadow);
+
 }
+
 
 .about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+
+  color:var(--text-h);
+
 }
+
 
 .about p {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
+
+  color:var(--text);
+
 }
 
-/* 📱 RESPONSIVE ABOUT */
 
-@media (max-width: 768px) {
-  .about {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+/* FIX DARK ABOUT */
 
-  .about img {
-    margin: 0 auto;
-  }
+.dark .about {
 
-  .about p {
-    font-size: 1.05rem;
-  }
+  background:var(--bg);
+
 }
+
+
+.dark .about h2 {
+
+  color:var(--text-h);
+
+}
+
+
+.dark .about p {
+
+  color:var(--text);
+
+}
+
+
+
+/* =========================
+   🌙 BOTON TEMA
+========================= */
+
+.theme-btn {
+
+  position:fixed;
+
+  top:20px;
+
+  right:20px;
+
+  border:none;
+
+  background:var(--bg);
+
+  color:var(--text);
+
+  font-size:22px;
+
+  cursor:pointer;
+
+  z-index:2000;
+
+}
+
+
 
 /* =========================
    🔻 FOOTER
 ========================= */
 
 .footer {
-  background: var(--bg);
-  border-top: 1px solid var(--border);
-  padding: 60px 20px 30px;
-  text-align: center;
+
+  background:var(--bg);
+
+  border-top:1px solid var(--border);
+
+  padding:60px 20px 30px;
+
+  text-align:center;
+
 }
+
 
 .footer-content {
-  max-width: 800px;
-  margin: 0 auto;
+
+  max-width:800px;
+
+  margin:auto;
+
 }
 
-.footer h3 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-}
-
-.footer p {
-  color: var(--text);
-  margin-bottom: 20px;
-}
 
 .footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 25px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:25px;
+
+  flex-wrap:wrap;
+
+  margin-top:25px;
+
 }
+
 
 .footer-links a {
-  color: var(--text);
-  font-weight: 500;
-  transition: color 0.2s ease, transform 0.2s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:8px;
+
+  color:var(--text);
+
+  transition:.3s;
+
 }
+
 
 .footer-links a:hover {
-  color: var(--accent);
-  transform: translateY(-2px);
+
+  color:var(--accent);
+
 }
+
 
 .footer-copy {
-  font-size: 0.9rem;
-  color: var(--text);
-  opacity: 0.8;
+
+  margin-top:35px;
+
+  font-size:.9rem;
+
+  color:var(--text);
+
 }
 
-/* SOCIAL ICON LINKS */
 
-.social-link {
-  display: inline-flex;
+
+/* =========================
+   📱 RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+  .about{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+  }
+
+
+  .about img{
+
+    margin:auto;
+
+  }
+
+}
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  font-size: 28px;
   text-decoration: none;
-  color: inherit;
-  transition: 0.3s ease;
-}
-.back-home {
-  margin-top: 15px;
-  display: inline-block;
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.back-home:hover {
-  text-decoration: underline;
+  z-index: 999999;
 }

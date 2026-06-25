@@ -1,65 +1,128 @@
 .hero {
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 
-  background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.25)
-    ),
-    url("../../assets/images/yoga.jpg");
 
-  background-size: cover;
-  background-position: center;
+ min-height:90vh;
 
-  color: white;
-  padding: 20px;
+
+ display:flex;
+
+ justify-content:center;
+
+ align-items:center;
+
+
+ text-align:center;
+
+
+ background-image:
+
+
+ linear-gradient(
+
+ rgba(0,0,0,.35),
+
+ rgba(0,0,0,.25)
+
+ ),
+
+
+ url("../../assets/images/yoga.jpg");
+
+
+
+ background-size:cover;
+
+ background-position:center;
+
+
+ padding:20px;
+
+
+ color:rgb(247, 239, 239);
+
 }
+
 
 
 .hero-overlay {
-  max-width: 700px;
+
+
+ max-width:700px;
+
 }
+
 
 
 .hero h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
-  font-weight: 700;
+
+
+ font-size:4rem;
+
+
+ margin-bottom:20px;
+
+
+ font-weight:700;
+
+
+ color:rgb(240, 229, 229);
+
 }
+
 
 
 .hero p {
-  font-size: 1.4rem;
-  line-height: 1.6;
-  margin-bottom: 35px;
+
+
+ font-size:1.4rem;
+
+
+ line-height:1.6;
+
+
+ margin-bottom:35px;
+
+
+ color:rgb(238, 231, 231);
+
 }
+
 
 
 .hero-btn {
 
-  display: inline-block;
 
-  background: white;
-  color: #2b7d1c;
+ display:inline-block;
 
-  padding: 15px 35px;
 
-  border-radius: 50px;
+ background:white;
 
-  font-weight: 600;
 
-  text-decoration: none;
+ color:#2f7d32;
 
-  transition: 0.3s;
+
+ padding:15px 35px;
+
+
+ border-radius:50px;
+
+
+ font-weight:600;
+
+
+ text-decoration:none;
+
+
+ transition:.3s;
+
 }
+
 
 
 .hero-btn:hover {
 
-  transform: translateY(-3px);
+
+ transform:translateY(-3px);
+
 
 }
